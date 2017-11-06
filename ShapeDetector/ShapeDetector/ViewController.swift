@@ -9,14 +9,6 @@
 import UIKit
 import CoreML
 
-// shape enum
-enum Shape: String {
-    case circle
-    case rectangle
-    case triangle
-    case star
-}
-
 class ViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet weak var drawView: DrawingView!
@@ -63,19 +55,6 @@ class ViewController: UIViewController {
                 shape = String(i.key)
             }
             value = i.value
-        }
-        switch shape {
-        case Shape.circle.rawValue:
-            shape = "Circle"
-        case Shape.rectangle.rawValue:
-            shape = "Rectangle"
-        case Shape.triangle.rawValue:
-            shape = "Triangle"
-        case Shape.star.rawValue:
-            shape = "Star"
-        default:
-            shape = "???"
-            break
         }
         self.resultLabel.text = shape
     }
