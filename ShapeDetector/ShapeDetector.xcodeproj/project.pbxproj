@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54FC605641A8D06B61BE04A2 /* Pods_ShapeDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4FCC2AEDC6DA5734AE85C6 /* Pods_ShapeDetector.framework */; };
+		5F931062202A729E005D5C2A /* shape_detect_with_keras+Fritz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F931061202A729E005D5C2A /* shape_detect_with_keras+Fritz.swift */; };
 		E9B632A61FA7479F003B8899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B632A51FA7479F003B8899 /* AppDelegate.swift */; };
 		E9B632A81FA7479F003B8899 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B632A71FA7479F003B8899 /* ViewController.swift */; };
 		E9B632AB1FA7479F003B8899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B632A91FA7479F003B8899 /* Main.storyboard */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F4FCC2AEDC6DA5734AE85C6 /* Pods_ShapeDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShapeDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A197AC5DBBE631BF7B33D56 /* Pods-ShapeDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShapeDetector.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShapeDetector/Pods-ShapeDetector.release.xcconfig"; sourceTree = "<group>"; };
+		5F931061202A729E005D5C2A /* shape_detect_with_keras+Fritz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "shape_detect_with_keras+Fritz.swift"; sourceTree = "<group>"; };
+		8CB582EEAB7FA4DD41FE1A66 /* Pods-ShapeDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShapeDetector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShapeDetector/Pods-ShapeDetector.debug.xcconfig"; sourceTree = "<group>"; };
 		E9B632A21FA7479F003B8899 /* ShapeDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShapeDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B632A51FA7479F003B8899 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9B632A71FA7479F003B8899 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54FC605641A8D06B61BE04A2 /* Pods_ShapeDetector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		900F2227F7DBCE21E557A4A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F4FCC2AEDC6DA5734AE85C6 /* Pods_ShapeDetector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1B1C5F3A974FD98CC12E9C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CB582EEAB7FA4DD41FE1A66 /* Pods-ShapeDetector.debug.xcconfig */,
+				5A197AC5DBBE631BF7B33D56 /* Pods-ShapeDetector.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E9B632991FA7479F003B8899 = {
 			isa = PBXGroup;
 			children = (
 				E9B632A41FA7479F003B8899 /* ShapeDetector */,
 				E9B632A31FA7479F003B8899 /* Products */,
+				B1B1C5F3A974FD98CC12E9C8 /* Pods */,
+				900F2227F7DBCE21E557A4A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +92,7 @@
 				E9B632AC1FA7479F003B8899 /* Assets.xcassets */,
 				E9B632AE1FA7479F003B8899 /* LaunchScreen.storyboard */,
 				E9B632B11FA7479F003B8899 /* Info.plist */,
+				5F931061202A729E005D5C2A /* shape_detect_with_keras+Fritz.swift */,
 			);
 			path = ShapeDetector;
 			sourceTree = "<group>";
@@ -77,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9B632B41FA7479F003B8899 /* Build configuration list for PBXNativeTarget "ShapeDetector" */;
 			buildPhases = (
+				A398B967DC0B3BAA6AF3933D /* [CP] Check Pods Manifest.lock */,
 				E9B6329E1FA7479F003B8899 /* Sources */,
 				E9B6329F1FA7479F003B8899 /* Frameworks */,
 				E9B632A01FA7479F003B8899 /* Resources */,
+				9E2292B40284895EAB2D2E1F /* [CP] Embed Pods Frameworks */,
+				7B955AFA1C99D84B79EB715F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,6 +167,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7B955AFA1C99D84B79EB715F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShapeDetector/Pods-ShapeDetector-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E2292B40284895EAB2D2E1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ShapeDetector/Pods-ShapeDetector-frameworks.sh",
+				"${PODS_ROOT}/Fritz/Framework/Fritz.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fritz.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShapeDetector/Pods-ShapeDetector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A398B967DC0B3BAA6AF3933D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShapeDetector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E9B6329E1FA7479F003B8899 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -146,6 +230,7 @@
 				E9B632A81FA7479F003B8899 /* ViewController.swift in Sources */,
 				E9D3933B1FAC1D8900DB8A19 /* shape_detect_with_keras.mlmodel in Sources */,
 				E9B632A61FA7479F003B8899 /* AppDelegate.swift in Sources */,
+				5F931062202A729E005D5C2A /* shape_detect_with_keras+Fritz.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +365,7 @@
 		};
 		E9B632B51FA7479F003B8899 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB582EEAB7FA4DD41FE1A66 /* Pods-ShapeDetector.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +381,7 @@
 		};
 		E9B632B61FA7479F003B8899 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A197AC5DBBE631BF7B33D56 /* Pods-ShapeDetector.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

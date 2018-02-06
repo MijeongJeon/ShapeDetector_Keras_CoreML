@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var drawView: DrawingView!
     @IBOutlet weak var resultLabel: UILabel!
     
+    // initialize once
+    var model = shape_detect_with_keras().fritz()
+    
     private var inputArray: MLMultiArray!
     
     // MARK: - App Cycle
@@ -42,8 +45,7 @@ class ViewController: UIViewController {
             return
         }
         // ComreML Model create and get output
-        let model = shape_detect_with_keras()
-        guard let output: shape_detect_with_kerasOutput = try? model.prediction(image: pixelBuffer) else {
+        guard let output: shape_detect_with_kerasOutput = try? self.model.prediction(image: pixelBuffer) else {
             return
         }
         // Get highest proportion
