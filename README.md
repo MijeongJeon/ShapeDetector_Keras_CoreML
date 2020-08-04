@@ -8,7 +8,7 @@ Deep learning installed Shape Detector using Keras and CoreML 📱
 [![DeepLearning](https://img.shields.io/badge/DeepLearning-Keras-red.svg)](https://keras.io)
 ![DeepLearning](https://img.shields.io/badge/DeepLearning-CoreML-green.svg)
 
-**ShapreDetector is a deeplearning installed simple app for predict of hand-drawing shapes**
+**ShapeDetector is a deeplearning installed simple app for predict of hand-drawing shapes**
 
 <img src="https://github.com/MijeongJeon/ShapeDetector_Keras_CoreML/blob/master/demo/shapeDetector.gif" width="300px"/>
 
